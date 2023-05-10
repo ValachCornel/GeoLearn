@@ -1,0 +1,286 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Red+Hat+Display:wght@0,300;0,400;0,700;1,300;1,400;1,700';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242424;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1;
+    padding: 1.2rem;
+}
+
+header h1 {
+    padding: 0;
+    font-family: 'Red Hat Display';
+    font-size: 2.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: 'Red Hat Display';
+}
+
+.content {
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.one {
+    background-color: #1D1D1D;
+}
+
+.two {
+    background-color: #1D1D1D;
+}
+
+.content p {
+    text-align: center;
+    min-width: 270px;
+    max-width: 450px;
+    font-size: 18px;
+    font-family: Ubuntu;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    word-wrap: break-word;
+
+}
+
+.content img {
+    max-width: 270px;
+}
+
+.content-type {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.type-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.type-title h1 {
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.type {
+    width: 350px;
+    margin: 1.5rem;
+    position: relative;
+    height: 500px;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.images {
+    padding: 0 1.5rem;
+    width: 350px;
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.type p {
+    max-width: 350px;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-family: Ubuntu;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.type h1 {
+    letter-spacing: 1.5px;
+    font-family: 'Red Hat Display';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.type img {
+    display: flex;
+    align-items: stretch;
+    max-width: 300px;
+    min-height: 200px;
+}
+
+.munti-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.munti-title h1 {
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.container-munti {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+.munte {
+    position: relative;
+    justify-content: flex-start;
+    border-radius: 0.4rem;
+    background-color: #1D1D1D;
+    padding: 2rem;
+    display: flex;
+
+    flex-direction: column;
+    height: 300px;
+    max-width: 300px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.munte:hover {
+    transform: scale(1.1);
+}
+
+.munte h1 {
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.munte p {
+    line-height: 1.5em;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: 200;
+    max-width: 250px;
+    font-size: 1em;
+}
+
+.munte button {
+    border: 0;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.btn {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1.5rem;
+}
+
+@media (min-width: 800px) {
+
+    header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(1em, 1fr) repeat(4, minmax(10rem, 30rem)) minmax(1em, 1fr);
+        gap: 2em;
+        position: relative;
+    }
+
+    .bar {
+        flex-direction: row;
+        background-color: #1D1D1D;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        grid-column: 1/10;
+        grid-template-columns: subgrid;
+    }
+
+    .navbar {
+        grid-column: 3/5;
+        padding: 20px 3.0px;
+        display: flex;
+        gap: 5rem;
+    }
+
+
+    .content {
+        margin-top: 5rem;
+        padding: 2rem;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-munti {
+        padding: 0 0 4rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

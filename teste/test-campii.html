@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/test-style.css">
+    <script defer src="/scripts/testScript.js"></script>
+    <title>Test - Câmpii</title>
+</head>
+<body>
+    <div class="container-intro" id="intro">
+        <div class="intro">
+            <h1 id="titlu">Test Câmpii</h1>
+            <p>Ai 10 de minute pentru a răspunde la 5 întrebări</p>
+            <button id="start">începe acum</button>
+        </div>
+    </div>
+    
+    <div class="container-main" id="main">
+        <header>
+            <div class="topbar">
+                <div class="timer">
+                    <h1 id="timer" >10 : 00</h1>
+                </div>  
+                <div class="scor">
+                    <div class="corect">
+                        <h1 id="corect">0/5</h1>
+                    </div>
+                    
+                    <div class="gresit">
+                        <h1 id="gresit">0/5</h1>
+                    </div>
+                </div> 
+                
+            </div>
+        </header>
+        <div class="main-struct">
+            <div class="active-container" id="test">
+                <div class="intrebare">
+                    <p id="intrebareTest">intrebare</p>
+                </div>
+                <div class="controls">
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">raspuns</label>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">raspuns</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">raspuns</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" id="d_text">raspuns</label>
+                        </li>                   
+                    </ul>
+
+                    <div class="buttons">
+                        <button id="butonRaspuns">next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
